@@ -10,7 +10,7 @@ Landing page da **HoneyTech** — empresa de soluções digitais. Desenvolvida e
 
 ## Git — GitHub Flow
 
-`master` é sempre deployável. Todo trabalho novo sai de uma branch curta e volta via Pull Request. Nunca commitar diretamente na `master`.
+`main` é sempre deployável. Todo trabalho novo sai de uma branch curta e volta via Pull Request. Nunca commitar diretamente na `main`.
 
 ### Nomenclatura de branches
 
