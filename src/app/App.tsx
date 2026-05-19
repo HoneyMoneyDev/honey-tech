@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import beeLogo from '../assets/bee.svg'
+import BeeLogo from '../assets/BeeLogo'
 
 const fadeIn = keyframes`
   from { opacity: 0; transform: translateY(24px); }
@@ -25,16 +25,8 @@ const Hero = styled.section`
   animation: ${fadeIn} 0.8s ease both;
 `
 
-const Logo = styled.img`
-  width: 120px;
-  height: 120px;
+const LogoWrapper = styled.div`
   filter: drop-shadow(0 4px 24px rgba(219, 172, 34, 0.35));
-`
-
-const Brand = styled.div`
-  display: flex;
-  align-items: center;
-  gap: ${({ theme }) => theme.spacing.sm};
 `
 
 const BrandName = styled.h1`
@@ -61,7 +53,7 @@ const Tagline = styled.p`
 
 const CTAButton = styled.a`
   display: inline-block;
-  padding: ${({ theme }) => theme.spacing.md} ${({ theme }) => theme.spacing.xl};
+  padding: 0 ${({ theme }) => theme.spacing.xl};
   background-color: ${({ theme }) => theme.colors.primary};
   color: #000;
   font-size: ${({ theme }) => theme.fontSizes.sm};
@@ -70,8 +62,6 @@ const CTAButton = styled.a`
   transition: background-color ${({ theme }) => theme.transition};
   min-height: 44px;
   line-height: 44px;
-  padding-top: 0;
-  padding-bottom: 0;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.primaryDark};
@@ -83,19 +73,18 @@ const Divider = styled.div`
   height: 3px;
   background-color: ${({ theme }) => theme.colors.primary};
   border-radius: 2px;
-  margin: 0 auto;
 `
 
 function App() {
   return (
     <Page>
       <Hero>
-        <Logo src={beeLogo} alt="HoneyTech logo" />
-        <Brand>
-          <BrandName>
-            Honey<span>Tech</span>
-          </BrandName>
-        </Brand>
+        <LogoWrapper>
+          <BeeLogo size={120} />
+        </LogoWrapper>
+        <BrandName>
+          Honey<span>Tech</span>
+        </BrandName>
         <Divider />
         <Tagline>
           Soluções digitais que transformam ideias em produtos que funcionam de verdade.
