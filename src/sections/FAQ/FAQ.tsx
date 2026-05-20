@@ -26,17 +26,12 @@ const ITEMS: FAQItem[] = [
   {
     question: 'Quais tecnologias vocês utilizam?',
     answer:
-      'No frontend usamos React, TypeScript e Next.js. No backend, Node.js, Python e PostgreSQL. Para mobile, React Native. Escolhemos a stack mais adequada para cada projeto — sem dogmatismo tecnológico. Também trabalhamos com integrações de APIs, automações e plataformas como Supabase e Firebase.',
+      'Atuamos nas tecnologias mais presentes no mercado como C#, PHP, Java, Kotlin, JavaScript, incluindo frameworks como Nest.js, Next.js, React, React Native e Vue.',
   },
   {
     question: 'Vocês oferecem suporte após a entrega?',
     answer:
-      'Sim. Incluímos um período de garantia de 30 dias após o deploy para correção de bugs sem custo adicional. Para suporte contínuo, manutenção e evolução do produto, oferecemos planos mensais conforme a necessidade do cliente.',
-  },
-  {
-    question: 'Posso acompanhar o andamento do projeto?',
-    answer:
-      'Com certeza. Você terá acesso a um board de tarefas (Notion ou Linear) e reuniões de alinhamento semanais. Todo o código fica em repositório privado no GitHub com acesso seu. Acreditamos que transparência e comunicação são tão importantes quanto a qualidade técnica.',
+      'Sim. Incluímos um período de garantia de 30 dias de manutenção e ajustes de acordo com o escopo do projeto contratado sem custo. Também oferecemos planos de manutenção mensal.',
   },
 ]
 
