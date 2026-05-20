@@ -155,7 +155,7 @@ function Footer() {
               <FiLinkedin size={18} />
             </SocialLink>
             <SocialLink
-              href="https://wa.me/5541991892509?text=Ol%C3%A1%21+Vim+pelo+site+da+HoneyTech+e+gostaria+de+saber+mais+sobre+os+servi%C3%A7os+e+solicitar+um+or%C3%A7amento."
+              href="https://wa.me/5541991892409?text=Ol%C3%A1%21+Vim+pelo+site+da+HoneyTech+e+gostaria+de+saber+mais+sobre+os+servi%C3%A7os+e+solicitar+um+or%C3%A7amento."
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"

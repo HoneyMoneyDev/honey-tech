@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { BiLogoWhatsapp } from 'react-icons/bi'
 
 const WHATSAPP_URL =
-  'https://wa.me/5541991892509?text=Ol%C3%A1%21+Vim+pelo+site+da+HoneyTech+e+gostaria+de+saber+mais+sobre+os+servi%C3%A7os+e+solicitar+um+or%C3%A7amento.'
+  'https://wa.me/5541991892409?text=Ol%C3%A1%21+Vim+pelo+site+da+HoneyTech+e+gostaria+de+saber+mais+sobre+os+servi%C3%A7os+e+solicitar+um+or%C3%A7amento.'
 
 const FloatingLink = styled.a`
   position: fixed;
