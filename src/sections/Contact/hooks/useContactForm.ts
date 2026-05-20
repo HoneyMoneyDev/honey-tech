@@ -46,8 +46,16 @@ function useContactForm() {
     }
     setStatus('loading')
     try {
-      // Ponto de integração: substituir pelo endpoint real (Formspree, API, etc.)
-      await new Promise((resolve) => setTimeout(resolve, 800))
+      const response = await fetch('https://formspree.io/f/mredeowa', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: fields.name,
+          email: fields.email,
+          message: fields.message,
+        }),
+      })
+      if (!response.ok) throw new Error()
       setStatus('success')
       setFields({ name: '', email: '', message: '' })
     } catch {
