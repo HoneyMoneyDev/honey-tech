@@ -1,15 +1,15 @@
-import{l as r,F as j,g as y}from"./index-C5EaT6DC.js";import{r as g,g as s}from"./styles-cOqFwPJs.js";import"./vendor-COI1NATn.js";import"./icons-CHcfn-E7.js";function S(e){const o={};return e.name.trim()||(o.name="Nome é obrigatório."),e.email.trim()?/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.email)||(o.email="E-mail inválido."):o.email="E-mail é obrigatório.",e.message.trim()||(o.message="Mensagem é obrigatória."),o}function v(){const[e,o]=g.useState({name:"",email:"",message:""}),[i,a]=g.useState({}),[t,l]=g.useState("idle");function b(c){const{name:n,value:d}=c.target;o(m=>({...m,[n]:d})),a(m=>({...m,[n]:void 0}))}async function $(c){c.preventDefault();const n=S(e);if(Object.keys(n).length>0){a(n);return}l("loading");try{await new Promise(d=>setTimeout(d,800)),l("success"),o({name:"",email:"",message:""})}catch{l("error")}}return{fields:e,errors:i,status:t,handleChange:b,handleSubmit:$}}const z=s.section`
+import{l as r,F as y,g as j}from"./index-YdpaH1zO.js";import{r as m,g as s}from"./styles-cOqFwPJs.js";import"./vendor-COI1NATn.js";import"./icons-CHcfn-E7.js";function S(e){const o={};return e.name.trim()||(o.name="Nome é obrigatório."),e.email.trim()?/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.email)||(o.email="E-mail inválido."):o.email="E-mail é obrigatório.",e.message.trim()||(o.message="Mensagem é obrigatória."),o}function v(){const[e,o]=m.useState({name:"",email:"",message:""}),[i,a]=m.useState({}),[t,l]=m.useState("idle");function b(c){const{name:n,value:x}=c.target;o(d=>({...d,[n]:x})),a(d=>({...d,[n]:void 0}))}async function $(c){c.preventDefault();const n=S(e);if(Object.keys(n).length>0){a(n);return}l("loading");try{if(!(await fetch("https://formspree.io/f/mredeowa",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:e.name,email:e.email,message:e.message})})).ok)throw new Error;l("success"),o({name:"",email:"",message:""})}catch{l("error")}}return{fields:e,errors:i,status:t,handleChange:b,handleSubmit:$}}const z=s.section`
   padding: ${({theme:e})=>e.spacing.xxl} ${({theme:e})=>e.spacing.lg};
   background-color: ${({theme:e})=>e.colors.bgSurface};
-`,E=s.div`
+`,w=s.div`
   max-width: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: ${({theme:e})=>e.spacing.xl};
-`,w=s.div`
+`,E=s.div`
   text-align: center;
-`,F=s.h2`
+`,C=s.h2`
   font-size: ${({theme:e})=>e.fontSizes.xxl};
   font-weight: 700;
   color: ${({theme:e})=>e.colors.textPrimary};
@@ -18,7 +18,7 @@ import{l as r,F as j,g as y}from"./index-C5EaT6DC.js";import{r as g,g as s}from"
   span {
     color: ${({theme:e})=>e.colors.primary};
   }
-`,C=s.p`
+`,F=s.p`
   font-size: ${({theme:e})=>e.fontSizes.md};
   color: ${({theme:e})=>e.colors.textSecondary};
   margin: 0;
@@ -26,7 +26,7 @@ import{l as r,F as j,g as y}from"./index-C5EaT6DC.js";import{r as g,g as s}from"
   display: flex;
   flex-direction: column;
   gap: ${({theme:e})=>e.spacing.lg};
-`,u=s.div`
+`,g=s.div`
   display: flex;
   flex-direction: column;
   gap: ${({theme:e})=>e.spacing.sm};
@@ -61,7 +61,7 @@ import{l as r,F as j,g as y}from"./index-C5EaT6DC.js";import{r as g,g as s}from"
   &:focus {
     border-color: ${({$hasError:e,theme:o})=>e?o.colors.error:o.colors.primary};
   }
-`,M=s.textarea`
+`,T=s.textarea`
   ${f}
   padding: 16px;
   min-height: 140px;
@@ -71,10 +71,10 @@ import{l as r,F as j,g as y}from"./index-C5EaT6DC.js";import{r as g,g as s}from"
   &:focus {
     border-color: ${({$hasError:e,theme:o})=>e?o.colors.error:o.colors.primary};
   }
-`,x=s.span`
+`,u=s.span`
   font-size: ${({theme:e})=>e.fontSizes.xs};
   color: ${({theme:e})=>e.colors.error};
-`,T=s.button`
+`,M=s.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -115,4 +115,4 @@ import{l as r,F as j,g as y}from"./index-C5EaT6DC.js";import{r as g,g as s}from"
   color: ${({theme:e})=>e.colors.success};
   font-size: ${({theme:e})=>e.fontSizes.sm};
   font-weight: 500;
-`;function H(){const{fields:e,errors:o,status:i,handleChange:a,handleSubmit:t}=v();return r.jsx(z,{id:"contato",children:r.jsxs(E,{children:[r.jsxs(w,{children:[r.jsxs(F,{children:["Fale com a ",r.jsx("span",{children:"HoneyTech"})]}),r.jsx(C,{children:"Conte seu projeto e entraremos em contato em até 24 horas."})]}),i==="success"?r.jsxs(D,{"data-testid":"contact-success",children:[r.jsx(j,{size:20}),"Mensagem enviada! Em breve entraremos em contato."]}):r.jsxs(k,{onSubmit:t,noValidate:!0,children:[r.jsxs(u,{children:[r.jsx(p,{htmlFor:"name",children:"Nome"}),r.jsx(h,{id:"name",name:"name",type:"text",placeholder:"Seu nome completo",value:e.name,onChange:a,$hasError:!!o.name,"aria-describedby":o.name?"name-error":void 0}),o.name&&r.jsx(x,{id:"name-error",role:"alert",children:o.name})]}),r.jsxs(u,{children:[r.jsx(p,{htmlFor:"email",children:"E-mail"}),r.jsx(h,{id:"email",name:"email",type:"email",placeholder:"seu@email.com",value:e.email,onChange:a,$hasError:!!o.email,"aria-describedby":o.email?"email-error":void 0}),o.email&&r.jsx(x,{id:"email-error",role:"alert",children:o.email})]}),r.jsxs(u,{children:[r.jsx(p,{htmlFor:"message",children:"Mensagem"}),r.jsx(M,{id:"message",name:"message",placeholder:"Descreva seu projeto ou dúvida...",value:e.message,onChange:a,$hasError:!!o.message,"aria-describedby":o.message?"message-error":void 0}),o.message&&r.jsx(x,{id:"message-error",role:"alert",children:o.message})]}),r.jsxs(T,{type:"submit",disabled:i==="loading",children:[r.jsx(y,{size:16}),i==="loading"?"Enviando...":"Solicitar orçamento"]})]})]})})}export{H as default};
+`;function R(){const{fields:e,errors:o,status:i,handleChange:a,handleSubmit:t}=v();return r.jsx(z,{id:"contato",children:r.jsxs(w,{children:[r.jsxs(E,{children:[r.jsxs(C,{children:["Fale com a ",r.jsx("span",{children:"HoneyTech"})]}),r.jsx(F,{children:"Conte seu projeto e entraremos em contato em até 24 horas."})]}),i==="success"?r.jsxs(D,{"data-testid":"contact-success",children:[r.jsx(y,{size:20}),"Mensagem enviada! Em breve entraremos em contato."]}):r.jsxs(k,{onSubmit:t,noValidate:!0,children:[r.jsxs(g,{children:[r.jsx(p,{htmlFor:"name",children:"Nome"}),r.jsx(h,{id:"name",name:"name",type:"text",placeholder:"Seu nome completo",value:e.name,onChange:a,$hasError:!!o.name,"aria-describedby":o.name?"name-error":void 0}),o.name&&r.jsx(u,{id:"name-error",role:"alert",children:o.name})]}),r.jsxs(g,{children:[r.jsx(p,{htmlFor:"email",children:"E-mail"}),r.jsx(h,{id:"email",name:"email",type:"email",placeholder:"seu@email.com",value:e.email,onChange:a,$hasError:!!o.email,"aria-describedby":o.email?"email-error":void 0}),o.email&&r.jsx(u,{id:"email-error",role:"alert",children:o.email})]}),r.jsxs(g,{children:[r.jsx(p,{htmlFor:"message",children:"Mensagem"}),r.jsx(T,{id:"message",name:"message",placeholder:"Descreva seu projeto ou dúvida...",value:e.message,onChange:a,$hasError:!!o.message,"aria-describedby":o.message?"message-error":void 0}),o.message&&r.jsx(u,{id:"message-error",role:"alert",children:o.message})]}),r.jsxs(M,{type:"submit",disabled:i==="loading",children:[r.jsx(j,{size:16}),i==="loading"?"Enviando...":"Solicitar orçamento"]})]})]})})}export{R as default};
