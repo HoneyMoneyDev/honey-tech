@@ -178,3 +178,180 @@ Convenção de nome de testes: `it('deve [comportamento] quando [condição]')`.
 | Reestruturação significativa da página | MAJOR |
 | Nova seção ou funcionalidade visível | MINOR |
 | Correção visual ou de bug | PATCH |
+
+---
+
+## Identidade Visual
+
+Guia completo de referência em `docs/guia-identidade-visual.md`. Resumo abaixo.
+
+### Cores
+
+#### Paleta principal
+
+| Token | Hex | Uso |
+|-------|-----|-----|
+| `primary` | `#ffa500` | CTAs, destaques, links ativos, bordas de foco |
+| `primaryDark` | `#e6940a` | Hover de botões e elementos primários |
+| `logo` | `#dbac22` | Exclusivo para a logo (bee) |
+
+#### Backgrounds
+
+| Token | Hex | Uso |
+|-------|-----|-----|
+| `bgBody` | `#121212` | Fundo da página |
+| `bgSurface` | `#1e1e1e` | Cards, inputs, modais, sidebar |
+| `bgSidebar` | `#1a1a1a` | Sidebar/nav lateral |
+
+#### Texto
+
+| Token | Hex | Uso |
+|-------|-----|-----|
+| `textPrimary` | `#ffffff` | Títulos, labels, texto principal |
+| `textSecondary` | `#b3b3b3` | Descrições, placeholders, texto de apoio |
+| `textDisabled` | `#666666` | Elementos desabilitados |
+
+#### Bordas
+
+| Token | Hex | Uso |
+|-------|-----|-----|
+| `border` | `#333333` | Bordas de cards, inputs, separadores |
+
+#### Semânticas
+
+| Token | Hex | Uso |
+|-------|-----|-----|
+| `success` | `#4caf50` | Confirmações, status positivo |
+| `error` | `#f44336` | Erros, validações, alertas críticos |
+| `warning` | `#ff9800` | Avisos, atenção |
+
+#### Opacidades frequentes
+
+```
+Hover background primário:  rgba(255, 165, 0, 0.1)
+Foco (box-shadow):          rgba(255, 165, 0, 0.1) — spread 3px
+Glow da logo:               rgba(219, 172, 34, 0.35)
+Overlay de modal/sidebar:   rgba(0, 0, 0, 0.5)
+Erro de fundo (input):      rgba(244, 67, 54, 0.05)
+Sucesso de fundo:           rgba(76, 175, 80, 0.1)
+```
+
+---
+
+### Tipografia
+
+#### Font stack
+
+```css
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+```
+
+> Fonte do sistema — sem dependência de Google Fonts.
+
+#### Escala de tamanhos
+
+| Token | Valor | Uso |
+|-------|-------|-----|
+| `xs` | `12px` | Mensagens de erro, badges |
+| `sm` | `14px` | Corpo de texto, labels, botões |
+| `md` | `16px` | Texto secundário |
+| `lg` | `18px` | Subtítulos, taglines |
+| `xl` | `24px` | Logo/nome da marca |
+| `xxl` | `28px` | Títulos de seção |
+| `hero` | `48px` | Título principal da landing page |
+
+#### Pesos
+
+| Peso | Uso |
+|------|-----|
+| `400` | Corpo de texto, descrições |
+| `500` | Labels, subtítulos |
+| `600` | Botões |
+| `700` | Títulos, nome da marca |
+
+---
+
+### Espaçamento
+
+| Token | Valor | Uso típico |
+|-------|-------|-----------|
+| `xs` | `4px` | Espaços internos mínimos |
+| `sm` | `8px` | Gap entre ícone e texto, margin de label |
+| `md` | `16px` | Padding de inputs e botões |
+| `lg` | `24px` | Padding de cards, gap entre seções |
+| `xl` | `32px` | Margin entre cards |
+| `xxl` | `48px` | Espaçamento entre blocos de conteúdo |
+
+---
+
+### Border radius e sombras
+
+| Token | Valor | Uso |
+|-------|-------|-----|
+| `sm` | `4px` | Badges, tags |
+| `md` | `8px` | Inputs, botões |
+| `lg` | `12px` | Cards, modais |
+| `full` | `50%` | Avatares, spinners |
+
+```css
+sm: 0 2px 4px rgba(0, 0, 0, 0.3)
+md: 0 4px 8px rgba(0, 0, 0, 0.3)
+lg: 0 8px 16px rgba(0, 0, 0, 0.3)
+```
+
+Transição padrão: `0.3s ease` em todos os elementos interativos.
+
+---
+
+### Logo
+
+- **Componente**: `src/assets/BeeLogo.tsx` — sempre usar inline, nunca como `<img src>`.
+- **Cor**: `#dbac22`
+- **Tamanho padrão**: `120px`
+- **Efeito**: `drop-shadow(0 4px 24px rgba(219, 172, 34, 0.35))`
+
+```tsx
+import BeeLogo from '@/assets/BeeLogo'
+<BeeLogo size={120} />
+<BeeLogo size={32} color="#ffa500" />
+```
+
+#### Nome da marca
+
+```tsx
+Honey<span style={{ color: '#ffa500' }}>Tech</span>
+```
+
+- `Honey` — `#ffffff`, `Tech` — `#ffa500`, peso `700`, letter-spacing `-1px`.
+
+---
+
+### Ícones
+
+Biblioteca: `react-icons`
+
+| Prefixo | Conjunto | Uso |
+|---------|----------|-----|
+| `Fi` | Feather Icons | UI geral (menu, usuário, olho, seta) |
+| `Bi` | BoxIcons | Dashboard, finanças, projetos |
+| `Md` | Material Design | Formulários, status |
+
+Tamanho padrão: `20px`. Em botões com texto: `margin-right: 12px`.
+
+---
+
+### Acessibilidade
+
+- Altura mínima de elementos interativos: **44px**
+- Foco visível: `box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.1)` — nunca `outline: none` sem substituto.
+- Contraste: `#b3b3b3` sobre `#121212` passa WCAG AA.
+
+---
+
+### Breakpoints
+
+| Nome | Valor | Comportamento |
+|------|-------|---------------|
+| `mobile` | `< 768px` | Layout empilhado |
+| `desktop` | `>= 768px` | Layout lado a lado |
