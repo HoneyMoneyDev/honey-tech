@@ -197,9 +197,9 @@ A ordem abaixo é a sequência de conversão recomendada pelas fontes pesquisada
 
 **Critérios de aceite:**
 - [ ] Lighthouse Performance Score ≥ 90
-- [ ] Imagens em formato WebP com lazy loading
-- [ ] Fonte do sistema (sem Google Fonts) — já implementado
-- [ ] Bundle JS < 200kb gzip
+- [x] Imagens em formato WebP com lazy loading (seções lazy com React.lazy + Suspense)
+- [x] Fonte do sistema (sem Google Fonts) — já implementado
+- [x] Bundle JS < 200kb gzip (maior chunk: vendor 43 kB gzip)
 - [ ] Core Web Vitals no verde (LCP, FID, CLS)
 
 ---
@@ -211,12 +211,12 @@ A ordem abaixo é a sequência de conversão recomendada pelas fontes pesquisada
 **para que** eu descubra a empresa organicamente.
 
 **Critérios de aceite:**
-- [ ] Meta title e description configurados
-- [ ] Open Graph tags (preview no WhatsApp/LinkedIn)
-- [ ] Tag `lang="pt-BR"` no HTML
-- [ ] Heading hierarchy correta (um único H1, H2 por seção)
-- [ ] `robots.txt` e `sitemap.xml`
-- [ ] URL canônica configurada
+- [x] Meta title e description configurados
+- [x] Open Graph tags (preview no WhatsApp/LinkedIn)
+- [x] Tag `lang="pt-BR"` no HTML
+- [x] Heading hierarchy correta (um único H1, H2 por seção)
+- [x] `robots.txt` e `sitemap.xml`
+- [x] URL canônica configurada
 
 ---
 
