@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import Header from '../sections/Header/Header'
 import Hero from '../sections/Hero/Hero'
+import WhatsAppButton from '../shared/components/WhatsAppButton/WhatsAppButton'
 
 const Services = lazy(() => import('../sections/Services/Services'))
 const About = lazy(() => import('../sections/About/About'))
@@ -20,6 +21,7 @@ function App() {
         <Contact />
         <Footer />
       </Suspense>
+      <WhatsAppButton />
     </>
   )
 }
