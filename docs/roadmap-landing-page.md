@@ -133,10 +133,10 @@ A ordem abaixo é a sequência de conversão recomendada pelas fontes pesquisada
 **para que** eu confie antes de entrar em contato.
 
 **Critérios de aceite:**
-- [ ] Mínimo 2 depoimentos com nome, foto e cargo/empresa do cliente
-- [ ] OU números de impacto (ex: "12 projetos entregues", "5 clientes ativos")
-- [ ] OU logos de clientes/parceiros
-- [ ] Depoimentos com aspas e destaque visual
+- [x] Mínimo 2 depoimentos com nome, foto e cargo/empresa do cliente
+- [x] OU números de impacto (ex: "12 projetos entregues", "5 clientes ativos")
+- [x] OU logos de clientes/parceiros
+- [x] Depoimentos com aspas e destaque visual
 
 ---
 
