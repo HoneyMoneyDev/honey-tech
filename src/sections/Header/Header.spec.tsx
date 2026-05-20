@@ -26,7 +26,7 @@ describe('Header', () => {
     const nav = screen.getByTestId('header-nav')
     expect(nav).toBeInTheDocument()
     const links = nav.querySelectorAll('a')
-    expect(links.length).toBeGreaterThanOrEqual(4)
+    expect(links.length).toBeGreaterThanOrEqual(3)
   })
 
   it('deve exibir o botão hamburger', () => {
