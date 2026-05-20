@@ -1,4 +1,4 @@
-import{n as o,h as s,j as n,e as a,k as c}from"./index-DF7PH2LL.js";import{g as e}from"./styles-cOqFwPJs.js";import"./vendor-COI1NATn.js";import"./icons-CHcfn-E7.js";const d=[{icon:s,title:"Desenvolvimento Web",description:"Sites institucionais, sistemas e aplicações web modernas, rápidas e acessíveis."},{icon:n,title:"Desenvolvimento Mobile",description:"Aplicativos iOS e Android nativos ou multiplataforma com foco em experiência do usuário."},{icon:a,title:"Design UI/UX",description:"Interfaces intuitivas e visualmente consistentes que convertem visitantes em clientes."},{icon:c,title:"Consultoria Digital",description:"Arquitetura de software, estratégia de produto e apoio técnico para seu negócio crescer."}],l=e.section`
+import{l as o,f as s,h as n,c as a,i as c}from"./index-3AcRRdgD.js";import{g as e}from"./styles-cOqFwPJs.js";import"./vendor-COI1NATn.js";import"./icons-CHcfn-E7.js";const d=[{icon:s,title:"Desenvolvimento Web",description:"Sites institucionais, sistemas e aplicações web modernas, rápidas e acessíveis."},{icon:n,title:"Desenvolvimento Mobile",description:"Aplicativos iOS e Android nativos ou multiplataforma com foco em experiência do usuário."},{icon:a,title:"Design UI/UX",description:"Interfaces intuitivas e visualmente consistentes que convertem visitantes em clientes."},{icon:c,title:"Consultoria Digital",description:"Arquitetura de software, estratégia de produto e apoio técnico para seu negócio crescer."}],l=e.section`
   padding: ${({theme:i})=>i.spacing.xxl} ${({theme:i})=>i.spacing.lg};
   background-color: ${({theme:i})=>i.colors.bgBody};
 `,p=e.h2`
@@ -57,14 +57,14 @@ import{n as o,h as s,j as n,e as a,k as c}from"./index-DF7PH2LL.js";import{g as 
   border-radius: ${({theme:i})=>i.borderRadius.md};
   color: ${({theme:i})=>i.colors.primary};
   flex-shrink: 0;
-`,h=e.h3`
+`,f=e.h3`
   font-size: ${({theme:i})=>i.fontSizes.md};
   font-weight: 600;
   color: ${({theme:i})=>i.colors.textPrimary};
   margin: 0;
-`,f=e.p`
+`,h=e.p`
   font-size: ${({theme:i})=>i.fontSizes.sm};
   color: ${({theme:i})=>i.colors.textSecondary};
   line-height: 1.6;
   margin: 0;
-`;function j(){return o.jsxs(l,{id:"servicos",children:[o.jsxs(p,{children:["Nossos ",o.jsx("span",{children:"Serviços"})]}),o.jsx(m,{children:"Soluções digitais do início ao fim, com tecnologia e atenção aos detalhes."}),o.jsx(g,{children:d.map(({icon:i,title:t,description:r})=>o.jsxs(x,{"data-testid":"service-card",children:[o.jsx(u,{"data-testid":"service-icon","aria-hidden":"true",children:o.jsx(i,{size:24})}),o.jsx(h,{"data-testid":"service-title",children:t}),o.jsx(f,{"data-testid":"service-description",children:r})]},t))})]})}export{j as default};
+`;function y(){return o.jsxs(l,{id:"servicos",children:[o.jsxs(p,{children:["Nossos ",o.jsx("span",{children:"Serviços"})]}),o.jsx(m,{children:"Soluções digitais do início ao fim, com tecnologia e atenção aos detalhes."}),o.jsx(g,{children:d.map(({icon:i,title:t,description:r})=>o.jsxs(x,{"data-testid":"service-card",children:[o.jsx(u,{"data-testid":"service-icon","aria-hidden":"true",children:o.jsx(i,{size:24})}),o.jsx(f,{"data-testid":"service-title",children:t}),o.jsx(h,{"data-testid":"service-description",children:r})]},t))})]})}export{y as default};
