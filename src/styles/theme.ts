@@ -11,6 +11,10 @@ export const theme = {
     textSecondary: '#b3b3b3',
 
     border: '#333333',
+
+    success: '#4caf50',
+    error: '#f44336',
+    warning: '#ff9800',
   },
 
   spacing: {
