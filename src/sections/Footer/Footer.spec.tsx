@@ -26,8 +26,7 @@ describe('Footer', () => {
   it('deve exibir links de redes sociais', () => {
     renderFooter()
     expect(screen.getByRole('link', { name: /linkedin/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /instagram/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /github/i })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /whatsapp/i })).toBeInTheDocument()
   })
 
   it('deve exibir link de política de privacidade', () => {

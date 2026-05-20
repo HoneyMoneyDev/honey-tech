@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { FiLinkedin, FiInstagram, FiGithub, FiMail } from 'react-icons/fi'
+import { FiLinkedin, FiMail } from 'react-icons/fi'
+import { BiLogoWhatsapp } from 'react-icons/bi'
 import BeeLogo from '../../assets/BeeLogo'
 
 const FooterEl = styled.footer`
@@ -146,7 +147,7 @@ function Footer() {
 
           <SocialLinks>
             <SocialLink
-              href="https://linkedin.com/company/honeytech"
+              href="https://www.linkedin.com/in/gustavofraposo/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -154,20 +155,12 @@ function Footer() {
               <FiLinkedin size={18} />
             </SocialLink>
             <SocialLink
-              href="https://instagram.com/honeytech"
+              href="https://wa.me/5541991892509"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Instagram"
+              aria-label="WhatsApp"
             >
-              <FiInstagram size={18} />
-            </SocialLink>
-            <SocialLink
-              href="https://github.com/HoneyMoneyDev"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              <FiGithub size={18} />
+              <BiLogoWhatsapp size={18} />
             </SocialLink>
           </SocialLinks>
         </Top>
