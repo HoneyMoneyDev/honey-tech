@@ -147,10 +147,10 @@ A ordem abaixo é a sequência de conversão recomendada pelas fontes pesquisada
 **para que** eu não precise sair da página para buscar informação.
 
 **Critérios de aceite:**
-- [ ] Mínimo 4 perguntas e respostas relevantes
-- [ ] Componente accordion (expande/colapsa)
-- [ ] Perguntas cobrindo: prazo, preço, processo, tecnologias
-- [ ] Animação suave de abertura/fechamento
+- [x] Mínimo 4 perguntas e respostas relevantes
+- [x] Componente accordion (expande/colapsa)
+- [x] Perguntas cobrindo: prazo, preço, processo, tecnologias
+- [x] Animação suave de abertura/fechamento
 
 ---
 
