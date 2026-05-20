@@ -1,4 +1,4 @@
-import{o as i,F as a,b as s,m as n,n as r,B as d}from"./index-DuvGAO7y.js";import{g as o,E as l}from"./styles-cOqFwPJs.js";import"./vendor-COI1NATn.js";import"./icons-CHcfn-E7.js";const c=[{icon:a,text:"Entregas no prazo e com qualidade garantida"},{icon:s,text:"Código limpo, testado e fácil de manter"},{icon:n,text:"Comunicação próxima e foco total no cliente"},{icon:r,text:"Soluções rápidas e escaláveis para o seu negócio"}],p=l`
+import{n as i,F as a,b as s,l as n,m as r,B as d}from"./index-DF7PH2LL.js";import{g as o,E as l}from"./styles-cOqFwPJs.js";import"./vendor-COI1NATn.js";import"./icons-CHcfn-E7.js";const c=[{icon:a,text:"Entregas no prazo e com qualidade garantida"},{icon:s,text:"Código limpo, testado e fácil de manter"},{icon:n,text:"Comunicação próxima e foco total no cliente"},{icon:r,text:"Soluções rápidas e escaláveis para o seu negócio"}],p=l`
   0%, 100% { transform: translateY(0); }
   50%       { transform: translateY(-10px); }
 `,x=o.section`
