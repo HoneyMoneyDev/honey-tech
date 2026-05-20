@@ -55,12 +55,12 @@ A ordem abaixo é a sequência de conversão recomendada pelas fontes pesquisada
 **para que** eu decida se vale continuar lendo.
 
 **Critérios de aceite:**
-- [ ] Headline principal impactante (máx. 10 palavras)
-- [ ] Subheadline explicando a proposta de valor
-- [ ] Logo bee visível
-- [ ] CTA primário acima da dobra ("Fale conosco" ou "Solicite um orçamento")
-- [ ] Layout responsivo (mobile e desktop)
-- [ ] Animação de entrada suave (fadeIn)
+- [x] Headline principal impactante (máx. 10 palavras)
+- [x] Subheadline explicando a proposta de valor
+- [x] Logo bee visível
+- [x] CTA primário acima da dobra ("Solicitar orçamento")
+- [x] Layout responsivo (mobile e desktop)
+- [x] Animação de entrada suave (fadeIn)
 
 ---
 
