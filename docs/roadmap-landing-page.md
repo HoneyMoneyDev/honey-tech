@@ -99,11 +99,11 @@ A ordem abaixo é a sequência de conversão recomendada pelas fontes pesquisada
 **para que** eu confie na seriedade da empresa.
 
 **Critérios de aceite:**
-- [ ] Logo + nome da marca
-- [ ] E-mail e/ou telefone de contato
-- [ ] Links para redes sociais (LinkedIn, Instagram, GitHub)
-- [ ] Link para Política de Privacidade
-- [ ] Copyright com ano atual
+- [x] Logo + nome da marca
+- [x] E-mail de contato com link mailto
+- [x] Links para redes sociais (LinkedIn, Instagram, GitHub)
+- [x] Link para Política de Privacidade
+- [x] Copyright com ano atual dinâmico
 
 ---
 

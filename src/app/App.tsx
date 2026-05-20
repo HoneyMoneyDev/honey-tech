@@ -1,6 +1,7 @@
 import Hero from '../sections/Hero/Hero'
 import Services from '../sections/Services/Services'
 import Contact from '../sections/Contact/Contact'
+import Footer from '../sections/Footer/Footer'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Hero />
       <Services />
       <Contact />
+      <Footer />
     </>
   )
 }
