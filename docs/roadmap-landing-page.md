@@ -120,9 +120,9 @@ A ordem abaixo é a sequência de conversão recomendada pelas fontes pesquisada
 **para que** eu me sinta seguro em contratar.
 
 **Critérios de aceite:**
-- [ ] Texto curto sobre a missão e valores da empresa
-- [ ] Foto ou ilustração representando a equipe/fundador
-- [ ] Diferenciais em formato de lista ou ícones (ex: Entregas no prazo, Código limpo)
+- [x] Texto curto sobre a missão e valores da empresa
+- [x] Ilustração visual com logo animada (float) e anéis decorativos
+- [x] 4 diferenciais em lista com ícone e texto
 
 ---
 
