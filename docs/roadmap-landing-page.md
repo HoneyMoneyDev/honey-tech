@@ -85,10 +85,10 @@ A ordem abaixo é a sequência de conversão recomendada pelas fontes pesquisada
 **para que** eu possa iniciar uma conversa com a HoneyTech sem fricção.
 
 **Critérios de aceite:**
-- [ ] Formulário com campos: Nome, E-mail, Mensagem (apenas esses três)
-- [ ] OU botão direto para WhatsApp/e-mail como alternativa ao formulário
-- [ ] CTA com linguagem de ação clara ("Solicitar orçamento", "Começar agora")
-- [ ] Feedback visual ao enviar (mensagem de sucesso/erro)
+- [x] Formulário com campos: Nome, E-mail, Mensagem (apenas esses três)
+- [x] CTA com linguagem de ação clara ("Solicitar orçamento")
+- [x] Feedback visual ao enviar (mensagem de sucesso com ícone)
+- [x] Validação em tempo real com mensagens de erro acessíveis
 
 ---
 
