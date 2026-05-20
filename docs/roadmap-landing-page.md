@@ -181,11 +181,11 @@ A ordem abaixo é a sequência de conversão recomendada pelas fontes pesquisada
 **para que** eu possa navegar rapidamente sem voltar ao topo.
 
 **Critérios de aceite:**
-- [ ] Header fixo no topo com `position: sticky`
-- [ ] Logo clicável (volta ao topo)
-- [ ] Links âncora para: Serviços, Sobre, Portfólio, Contato
-- [ ] Menu hamburger no mobile
-- [ ] Background com leve blur ao scrollar
+- [x] Header fixo no topo com `position: sticky`
+- [x] Logo clicável (volta ao topo)
+- [x] Links âncora para: Serviços, Sobre, Depoimentos, FAQ, Contato
+- [x] Menu hamburger no mobile
+- [x] Background com leve blur ao scrollar
 
 ---
 
