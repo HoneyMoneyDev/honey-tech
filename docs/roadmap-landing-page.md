@@ -71,10 +71,10 @@ A ordem abaixo é a sequência de conversão recomendada pelas fontes pesquisada
 **para que** eu saiba se a empresa resolve o meu problema.
 
 **Critérios de aceite:**
-- [ ] Cards com ícone, título e descrição curta para cada serviço
-- [ ] Mínimo 3 serviços apresentados (ex: Sites & Apps, Design, Consultoria)
-- [ ] Layout em grid responsivo (1 coluna mobile, 3 colunas desktop)
-- [ ] Hover com elevação visual nos cards
+- [x] Cards com ícone, título e descrição curta para cada serviço
+- [x] Mínimo 3 serviços apresentados (Web, Mobile, Design, Consultoria)
+- [x] Layout em grid responsivo (1 coluna mobile, 2 tablet, 4 desktop)
+- [x] Hover com elevação visual nos cards
 
 ---
 
