@@ -1,4 +1,4 @@
-import{m as e,B as s,f as t,e as n,a}from"./index-BBR6-XxU.js";import{g as r}from"./styles-cOqFwPJs.js";import"./vendor-COI1NATn.js";import"./icons-CHcfn-E7.js";const l=r.footer`
+import{m as e,B as s,f as t,e as n,a}from"./index-Cy8zBjX7.js";import{g as r}from"./styles-cOqFwPJs.js";import"./vendor-COI1NATn.js";import"./icons-CHcfn-E7.js";const l=r.footer`
   background-color: ${({theme:o})=>o.colors.bgSurface};
   border-top: 1px solid ${({theme:o})=>o.colors.border};
   padding: ${({theme:o})=>o.spacing.xl} ${({theme:o})=>o.spacing.lg};
